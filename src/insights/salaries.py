@@ -8,28 +8,20 @@ def get_max_salary(path: str) -> int:
 
     for salary in salary_reader:
         if salary["max_salary"] and salary["max_salary"] != "invalid":
-            # if len(salary["max_salary"]) > 0:
             max_salary.append(int(salary["max_salary"]))
 
     return max(max_salary)
 
 
 def get_min_salary(path: str) -> int:
-    """Get the minimum salary of all jobs
+    salary_reader = read(path)
+    min_salary = []
 
-    Must call `read`
+    for salary in salary_reader:
+        if salary["min_salary"] and salary["min_salary"] != "invalid":
+            min_salary.append(int(salary["min_salary"]))
 
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    int
-        The minimum salary paid out of all job opportunities
-    """
-    raise NotImplementedError
+    return min(min_salary)
 
 
 def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
