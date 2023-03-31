@@ -1,4 +1,5 @@
 from flask import Flask, Blueprint, render_template, request, send_file
+from src.flask_app.more_insights import get_job
 
 from src.insights.jobs import (
     read,
@@ -77,6 +78,13 @@ def list_jobs():
     }
 
     return render_template("list_jobs.jinja2", ctx=ctx)
+
+
+@bp.route("/job/<index>")
+def job(index):
+    jobs_list = read("data/jobs.csv")
+    one_job = get_job(jobs_list, index)
+    return render_template("job.jinja2", job=one_job)
 
 
 def init_app(app: Flask):
