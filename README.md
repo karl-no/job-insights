@@ -1,13 +1,16 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+Job Insights é um projeto que implementa análises a partir de um conjunto de dados sobre empregos.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+O projeto exercitou as habilidades:
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Utilizar o terminal interativo do Python.
+Utilizar estruturas condicionais e de repetição.
+Utilizar funções built-in do Python.
+Utilizar tratamento de exceções.
+Realizar a manipulação de arquivos.
+Escrever funções.
+Escrever testes com Pytest.
+Escrever seus próprios módulos e importá-los em outros códigos.
+
+Stack: Python, Pytest, Flask
+
+Mais informações em breve!
